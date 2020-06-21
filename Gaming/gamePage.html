@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gaming!-gamePage</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="./Images/headIcon.png" />
+        <script src="./gamePageJs.js"></script>
+        <link rel="stylesheet" type="text/css" href="./gamePageCss.css">
+        <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+        <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+        <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+    </head>
+    <body>
+        <a id="mainTitle" href="./index.html">Gaming!</a>
+        <div id="MainMenuDiv"></div>
+        <script type="text/babel">
+            class MainMenu extends React.Component {
+                constructor(props) {
+                    super(props);
+                }
+                render() {
+                    return (
+                        <div>
+                            <a class="menuAnchor">Games
+                                <div class="gamesMenuFrame">
+                                    <a href="" target="_self">EA</a><br/>
+                                    <a href="" target="_self">Bandai</a><br/>
+                                    <a href="" target="_self">Cygames</a><br/>
+                                </div>
+                            </a>
+                            <a class="menuAnchor" href="./press.html" target="_self">Press</a>
+                            <a class="menuAnchor" href="./aboutme.html" target="_self">About me</a>
+                        </div>
+                    );
+                }
+            }
+            ReactDOM.render(<MainMenu id="mainMenu"/>, document.getElementById("MainMenuDiv"));
+        </script>
+
+        <div id="mainThemeDiv">
+            <div id="gameTitleDiv">
+                <img id="gameImage" src="" alt="imge">
+                <h2 id="theTitle"></h2>
+                <p class="subTitle">Company: xxx</p>
+                <p class="subTitle">Followed: xxx</p>
+                <button id="downloadBtn" type="button">Download</button>
+                <script>
+                    let imgType = "";
+                    if (gameName == "azurlane" || gameName == "nfsol" || gameName == "shadowverse") {
+                        imgType = ".jpg";
+                    }else {
+                        imgType = ".png";
+                    }
+                    let imgElement = document.getElementById("gameImage");
+                    imgElement.src = "./Images/" + gameName + imgType;
+
+                    let gameTitle = "";
+                    if (gameName == "arknights") {
+                        gameTitle = "Arknights";
+                    }else if (gameName == "azurlane") {
+                        gameTitle = "Azur lane";
+                    }else if (gameName == "bangdream") {
+                        gameTitle = "Bang dream";
+                    }else if (gameName == "dragaliaLost") {
+                        gameTitle = "Dragalia Lost";
+                    }else if (gameName == "girlsfrontline") {
+                        gameTitle = "Girl's frontline";
+                    }else if (gameName == "granbluefantas") {
+                        gameTitle = "Granblue fantas";
+                    }else if (gameName == "nfsol") {
+                        gameTitle = "Need for speed OL";
+                    }else if (gameName == "shadowverse") {
+                        gameTitle = "Shadowverse";
+                    }
+                    let titleElement = document.getElementById("theTitle");
+                    titleElement.innerHTML = gameTitle;
+                </script>
+            </div>
+            <div id="gameScoreDiv">
+                <p>Score: <span style="color: black; font-style: italic; text-decoration: underline;">9.1</span></p>
+                <p>Download: <span style="color: black; font-style: italic; text-decoration: underline;">3,234,546</span></p>
+                <p style="color: rgb(120, 143, 245);">* The best games of 2019 *</p>
+                <p style="color: rgb(120, 143, 245);">* The most influential game *</p>
+            </div>
+            <div id="gameReviewDiv">
+                <ul style="list-style-type: none;">
+                    <li>
+                        <img class="userAvatar" src="./Images/userAvatars2.png">
+                        <h3 class="userName">Peter</h3>
+                        <img class="reviewStar" src="./Images/star.png" num="first">
+                        <img class="reviewStar" src="./Images/star.png">
+                        <img class="reviewStar" src="./Images/star.png">
+                        <img class="reviewStar" src="./Images/star.png">
+                        <img class="reviewStar" src="./Images/star.png">
+                        <p class="userReview">Amazing game! My main issue is the limitations you're put under in battles. For example, not being able to place all operators on the field on most stages</p>
+                        <hr/>
+                        <br/>
+                    </li>
+                    <li>
+                        <img class="userAvatar" src="./Images/userAvatars2.png">
+                        <h3 class="userName">Alan</h3>
+                        <img class="reviewStar" src="./Images/star.png" num="first">
+                        <img class="reviewStar" src="./Images/star.png">
+                        <img class="reviewStar" src="./Images/star.png">
+                        <img class="reviewStar" src="./Images/star.png">
+                        <img class="reviewStar" src="./Images/star.png">
+                        <p class="userReview">Very intresting game concept and nice story, some people say this game is pay-to-win game</p>
+                        <hr/>
+                        <br/>
+                    </li>
+                    <li>
+                        <img class="userAvatar" src="./Images/userAvatars2.png">
+                        <h3 class="userName">John</h3>
+                        <img class="reviewStar" src="./Images/star.png" num="first">
+                        <img class="reviewStar" src="./Images/star.png">
+                        <img class="reviewStar" src="./Images/star.png">
+                        <img class="reviewStar" src="./Images/star.png">
+                        <img class="reviewStar" src="./Images/star.png">
+                        <p class="userReview">FIRST mobile game I actually dropped money for in game purchases - not that I had to, but felt like supporting game. That's how much I actually enjoy this game. The music have a very retro</p>
+                        <hr/>
+                        <br/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="copyrightDiv"></div>
+        <script type="text/babel">
+            class Year extends React.Component {
+                constructor(props) {
+                    super(props);
+                }
+                render() {
+                    const y = new Date().getFullYear();
+                    return (
+                        <p id="copyright">Copyright © {y}, Gaming. All rights reserved.</p>
+                    );
+                }
+            }
+            ReactDOM.render(<Year/>, document.getElementById("copyrightDiv"));
+        </script>
+    </body>
+</html>

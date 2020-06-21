@@ -1,0 +1,437 @@
+a#mainTitle {
+    font-family: purposeAdvance;
+    font-size: 2rem;
+    font-style: italic;
+    position: relative;
+    border-width: 0rem;
+    margin-left: 3rem;
+    top: 2rem;
+    display: inline;
+    text-decoration: none;
+}
+a#mainTitle:link {
+    color: black;
+}
+a#mainTitle:visited {
+    color: black;
+}
+
+div#MainMenuDiv {
+    position: relative;
+    width: 30rem;   
+    text-align: center;
+    margin-right: 3.4rem;
+    float: right;
+    top: 3rem;
+    border-style: solid;
+    border-width: 0rem;
+    border-bottom-width: 0.1rem;
+}
+a.menuAnchor {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-decoration: none;
+    font-family: nebulousContent;
+    font-size: 1rem;
+    font-style: oblique;
+}
+a.menuAnchor:link {
+    color: black;
+}
+a.menuAnchor:visited {
+    color: black;
+}
+a.menuAnchor:hover {
+    color: rgb(121, 121, 121);
+}
+
+div.gamesMenuFrame {
+    width: 8rem;
+    height: 4rem;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: white;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: black;
+    padding: 1rem;
+}
+.menuAnchor:hover .gamesMenuFrame {
+    display: list-item;
+    list-style: none;
+}
+.gamesMenuFrame a {
+    color: black;
+    text-decoration: none;
+    font-family: nebulousContent;
+    font-size: 1rem;
+    font-style: normal;
+}
+.gamesMenuFrame a:link {
+    color: black;
+}
+.gamesMenuFrame a:visited {
+    color: black;
+}
+.gamesMenuFrame a:hover {
+    color: rgb(121, 121, 121);
+}
+
+div#mainThemeDiv {
+    width: 80rem;
+    height: 52rem;
+    position: relative;
+    left: 50%;
+    margin-left: -40rem;
+    margin-top: 4rem;
+    padding: 2rem;
+}
+div#gameTitleDiv {
+    background-color: rgb(255, 255, 255);
+    width: 45rem;
+    height: 20rem;
+    position: relative;
+    float: left;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 3px rgba(161, 161, 161, 0.562), -2px 2px 3px rgba(161, 161, 161, 0.562), 2px -2px 3px rgba(161, 161, 161, 0.562), -2px -2px 3px rgba(161, 161, 161, 0.562);
+}
+div#gameTitleDiv img#gameImage {
+    position: relative;
+    width: 14rem;
+    height: 14rem;
+    object-fit: fill;
+    top: 50%;
+    margin-top: -7rem;
+    margin-left: 2rem;
+    border-style: solid;
+    border-width: 0.2rem;
+}
+h2#theTitle {
+    float: right;
+    position: relative;
+    text-align: center;
+    width: 15rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+    font-family: nebulousContent;
+    font-size: 1.4rem;
+}
+p.subTitle {
+    clear: both;
+    float: right;
+    position: relative;
+    width: 15rem;
+    margin-top: 0;
+    margin-right: 6rem;
+    font-size: 1rem;
+    color: rgb(66, 66, 66);
+}
+button#downloadBtn {
+    clear: both;
+    float: right;
+    width: 8rem;
+    height: 2rem;
+    position: relative;
+    margin-right: 10rem;
+    margin-top: 3rem;
+    border-style: none;
+    background-color: rgb(112, 158, 218);
+    color: white;
+    outline-style: none;
+}
+button#downloadBtn:hover {
+    background-color: rgb(154, 191, 240);
+}
+div#gameScoreDiv {
+    background-color: rgb(255, 255, 255);;
+    width: 33rem;
+    height: 20rem;
+    position: relative;
+    margin-left: 2rem;
+    float: left;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 3px rgba(161, 161, 161, 0.562), -2px 2px 3px rgba(161, 161, 161, 0.562), 2px -2px 3px rgba(161, 161, 161, 0.562), -2px -2px 3px rgba(161, 161, 161, 0.562);
+}
+div#gameScoreDiv p {
+    font-family: nebulousContent;
+    font-size: 1.4rem;
+    color: rgb(112, 112, 112);
+    position: relative;
+    margin-left: 4rem;
+}
+div#gameScoreDiv p:first-child {
+    margin-top: 4rem;
+}
+div#gameReviewDiv {
+    clear: both;
+    background-color: rgb(255, 255, 255);;
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    box-shadow: 2px 2px 3px rgba(161, 161, 161, 0.562), -2px 2px 3px rgba(161, 161, 161, 0.562), 2px -2px 3px rgba(161, 161, 161, 0.562), -2px -2px 3px rgba(161, 161, 161, 0.562);
+    overflow: scroll;
+}
+img.userAvatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    position: relative;
+}
+h3.userName {
+    display: inline;
+    position: absolute;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+img.reviewStar {
+    width: 0.7rem;
+    height: 0.7rem;
+    position: relative;
+    margin-top: 0.4rem;
+}
+img.reviewStar[num="first"] {
+    margin-left: 1rem;
+}
+p.userReview {
+    font-size: 1rem;
+}
+
+
+
+
+div#copyrightDiv {
+    margin-top: 5rem;
+    text-align: center;
+}
+p#copyright {
+    font-size: 0.3rem;
+}
+
+
+
+@font-face {
+    src: url("./Fonts/Purpose-advance.ttf");
+    font-family: purposeAdvance;
+}
+@font-face {
+    src: url("./Fonts/NebulousContent.otf");
+    font-family: nebulousContent;
+}
+
+@media only screen and (max-width: 1470px) {
+    a#mainTitle {
+        font-size: 1.9rem;
+        margin-left: 2.28rem;
+        top: 1.52rem;
+    }
+    div#MainMenuDiv {
+        width: 23rem;   
+        margin-right: 2.58rem;
+        top: 2.28rem;
+        border-bottom-width: 0.08rem;
+    }
+    a.menuAnchor {
+        margin-left: 1.52rem;
+        margin-right: 1.52rem;
+        font-size: 1rem;
+    }
+
+    div.gamesMenuFrame {
+        width: 6.08rem;
+        height: 4.28rem;
+        border-width: 0.08rem;
+        padding: 0.76rem;
+    }
+    .gamesMenuFrame a {
+        font-size: 1rem;
+    }
+
+    div#mainThemeDiv {
+        width: 64rem;
+        height: 41.6rem;
+        margin-left: -32rem;
+        margin-top: 3.2rem;
+        padding: 1.6rem;
+    }
+    div#gameTitleDiv {
+        width: 36rem;
+        height: 16rem;
+        margin-bottom: 1.6rem;
+    }
+    div#gameTitleDiv img#gameImage {
+        width: 11.2rem;
+        height: 11.2rem;
+        margin-top: -5.6rem;
+        margin-left: 1.6rem;
+        border-width: 0.16rem;
+    }
+    h2#theTitle {
+        width: 12rem;
+        margin-right: 3.2rem;
+        margin-top: 1.6rem;
+        font-size: 1.12rem;
+    }
+    p.subTitle {
+        width: 12rem;
+        margin-right: 4.8rem;
+        font-size: 0.8rem;
+    }
+    button#downloadBtn {
+        width: 6.4rem;
+        height: 1.6rem;
+        margin-right: 8rem;
+        margin-top: 2.4rem;
+    }
+    div#gameScoreDiv {
+        width: 26.4rem;
+        height: 16rem;
+        margin-left: 1.6rem;
+        margin-bottom: 1.6rem;
+    }
+    div#gameScoreDiv p {
+        font-size: 1.12rem;
+        margin-left: 3.2rem;
+    }
+    div#gameScoreDiv p:first-child {
+        margin-top: 3.2rem;
+    }
+    div#gameReviewDiv {
+        height: 24rem;
+    }
+    img.userAvatar {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 1.6rem;
+    }
+    h3.userName {
+        margin-left: 1.6rem;
+        font-size: 0.8rem;
+    }
+    img.reviewStar {
+        width: 0.56rem;
+        height: 0.56rem;
+        margin-top: 0.32rem;
+    }
+    img.reviewStar[num="first"] {
+        margin-left: 0.8rem;
+    }
+    p.userReview {
+        font-size: 0.8rem;
+    }
+
+    div#copyrightDiv {
+        margin-top: 8rem;
+    }
+    p#copyright {
+        font-size: 0.23rem;
+    }
+}
+@media only screen and (max-width: 751px) {
+    a#mainTitle {
+        font-size: 1rem;
+        margin-left: 1.2rem;
+        top: 0.8rem;
+    }
+    div#MainMenuDiv {
+        width: 18rem;   
+        margin-right: 1.36rem;
+        top: 1.2rem;
+        border-bottom-width: 0.04rem;
+    }
+    a.menuAnchor {
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+        font-size: 0.4rem;
+    }
+
+    div.gamesMenuFrame {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-width: 0.04rem;
+        padding: 0.4rem;
+    }
+    .gamesMenuFrame a {
+        font-size: 0.4rem;
+    }
+
+    div#mainThemeDiv {
+        width: 51.2rem;
+        height: 33.3rem;
+        margin-left: -25.6rem;
+        margin-top: 2.6rem;
+        padding: 1.3rem;
+    }
+    div#gameTitleDiv {
+        width: 23rem;
+        height: 10.2rem;
+        margin-bottom: 1.04rem;
+    }
+    div#gameTitleDiv img#gameImage {
+        width: 8.96rem;
+        height: 8.96rem;
+        margin-top: -4.48rem;
+        margin-left: 1.28rem;
+        border-width: 0.13rem;
+    }
+    h2#theTitle {
+        width: 9.6rem;
+        margin-right: 2.56rem;
+        margin-top: 1.28rem;
+        font-size: 0.9rem;
+    }
+    p.subTitle {
+        width: 9.6rem;
+        margin-right: 3.84rem;
+        font-size: 0.64rem;
+    }
+    button#downloadBtn {
+        width: 5.12rem;
+        height: 1.3rem;
+        margin-right: 6.4rem;
+        margin-top: 1.92rem;
+    }
+    div#gameScoreDiv {
+        width: 21.12rem;
+        height: 12.8rem;
+        margin-left: 1.28rem;
+        margin-bottom: 1.28rem;
+    }
+    div#gameScoreDiv p {
+        font-size: 0.9rem;
+        margin-left: 2.4rem;
+    }
+    div#gameScoreDiv p:first-child {
+        margin-top: 2.6rem;
+    }
+    div#gameReviewDiv {
+        height: 19.2rem;
+    }
+    img.userAvatar {
+        width: 2.6rem;
+        height: 2.6rem;
+        border-radius: 1.3rem;
+    }
+    h3.userName {
+        margin-left: 1.3rem;
+        font-size: 0.64rem;
+    }
+    img.reviewStar {
+        width: 0.45rem;
+        height: 0.45rem;
+        margin-top: 0.26rem;
+    }
+    img.reviewStar[num="first"] {
+        margin-left: 0.64rem;
+    }
+    p.userReview {
+        font-size: 0.64rem;
+    }
+
+    div#copyrightDiv {
+        margin-top: 15rem;
+    }
+    p#copyright {
+        font-size: 0.12rem;
+    }
+}

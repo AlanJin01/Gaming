@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gaming!-Press</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./pressCss.css">
+        <link rel="shortcut icon" href="./Images/headIcon.png" />
+        <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+        <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+        <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+    </head>
+    <body>
+        <a id="mainTitle" href="./index.html">Gaming!</a>
+        <div id="MainMenuDiv"></div>
+        <script type="text/babel">
+            class MainMenu extends React.Component {
+                constructor(props) {
+                    super(props);
+                }
+                render() {
+                    return (
+                        <div>
+                            <a class="menuAnchor">Games
+                                <div class="gamesMenuFrame">
+                                    <a href="" target="_self">EA</a><br/>
+                                    <a href="" target="_self">Bandai</a><br/>
+                                    <a href="" target="_self">Cygames</a><br/>
+                                </div>
+                            </a>
+                            <a class="menuAnchor" href="./press.html" target="_self">Press</a>
+                            <a class="menuAnchor" href="./aboutme.html" target="_self">About me</a>
+                        </div>
+                    );
+                }
+            }
+            ReactDOM.render(<MainMenu id="mainMenu"/>, document.getElementById("MainMenuDiv"));
+        </script>
+
+        <div id="pressDiv">
+            <h2 id="pressTitle">-Press-</h2>
+            <p>Official Name: &nbsp&nbsp Gaming!</p>
+            <p>Office Location: &nbsp&nbsp XXX XXX XXX</p>
+            <p>Tel: &nbsp&nbsp 000-0000-0000</p>
+        </div>
+        
+        <div id="copyrightDiv"></div>
+        <script type="text/babel">
+            class Year extends React.Component {
+                constructor(props) {
+                    super(props);
+                }
+                render() {
+                    const y = new Date().getFullYear();
+                    return (
+                        <p id="copyright">Copyright © {y}, Gaming. All rights reserved.</p>
+                    );
+                }
+            }
+            ReactDOM.render(<Year/>, document.getElementById("copyrightDiv"));
+        </script>
+    </body>
+</html>

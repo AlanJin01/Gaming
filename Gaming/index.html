@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gaming!</title>
+        <link rel="shortcut icon" href="./Images/headIcon.png" />
+        <meta charset="utf-8">
+        <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+        <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+        <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./indexCss.css">
+    </head>
+    <body>
+        <h2 id="mainTitle">Gaming!</h2>
+        <div id="MainMenuDiv"></div>
+        <script type="text/babel">
+            class MainMenu extends React.Component {
+                constructor(props) {
+                    super(props);
+                }
+                render() {
+                    return (
+                        <div>
+                            <a class="menuAnchor">Games
+                                <div class="gamesMenuFrame">
+                                    <a href="" target="_self">EA</a><br/>
+                                    <a href="" target="_self">Bandai</a><br/>
+                                    <a href="" target="_self">Cygames</a><br/>
+                                </div>
+                            </a>
+                            <a class="menuAnchor" href="./press.html" target="_self">Press</a>
+                            <a class="menuAnchor" href="./aboutme.html" target="_self">About me</a>
+                        </div>
+                    );
+                }
+            }
+            ReactDOM.render(<MainMenu id="mainMenu"/>, document.getElementById("MainMenuDiv"));
+        </script>
+
+        <div id="slickTrack">
+            <ul id="slickUL">
+                <li class="scrollList"><a href="" target="_self" name="azurlane" onclick="clicked(this)"><img class="linkImg" src="./Images/azurlane.jpg"></a></li>
+                <li class="scrollList"><a href="" target="_self" name="granbluefantas" onclick="clicked(this)"><img class="linkImg" src="./Images/granbluefantas.png"></a></li>
+                <li class="scrollList"><a href="" target="_self" name="shadowverse" onclick="clicked(this)"><img class="linkImg" src="./Images/shadowverse.jpg"></a></li>
+                <li class="scrollList"><a href="" target="_self" name="dragaliaLost" onclick="clicked(this)"><img class="linkImg" src="./Images/dragaliaLost.png"></a></li>
+            </ul>
+            <img id="leftArrow" src="./Images/leftArrow.png">
+            <img id="rightArrow" src="./Images/rightArrow.png">
+            <script>
+                const leftArr = document.getElementById("leftArrow");
+                const rightArr = document.getElementById("rightArrow");
+                const slick = document.getElementById("slickUL");
+                function clickLeftArr() {
+                    slick.scrollLeft -= 550;
+                }
+                function clickRightArr() {
+                    slick.scrollLeft += 550;
+                }
+                leftArr.addEventListener("click", clickLeftArr);
+                rightArr.addEventListener("click", clickRightArr);
+            </script>
+        </div>
+        
+        <div id="mostPopularDiv">
+            <h2 id="mostPopularHead">-most popular-</h2>
+            <ul class="mp_ul">
+                <li><a class="mpLink" href="" target="_self" name="arknights" onclick="clicked(this)"><img src="./Images/arknights.png"><p class="gameName">Arknights</p></a></li>
+                <li><a class="mpLink" href="" target="_self" name="bangdream" onclick="clicked(this)"><img src="./Images/bangdream.png"><p class="gameName">Bang dream</p></a></li>
+                <li><a class="mpLink" href="" target="_self" name="azurlane" onclick="clicked(this)"><img src="./Images/azurlane.jpg"><p class="gameName">Azur lane</p></a></li>
+                <li><a class="mpLink" href="" target="_self" name="dragaliaLost" onclick="clicked(this)"><img src="./Images/dragaliaLost.png"><p class="gameName">Dragalia lost</p></a></li>
+            </ul>
+            <ul class="mp_ul">
+                <li><a class="mpLink" href="" target="_self" name="girlsfrontline" onclick="clicked(this)"><img src="./Images/girlsfrontline.png"><p class="gameName">Girls frontline</p></a></li>
+                <li><a class="mpLink" href="" target="_self" name="nfsol" onclick="clicked(this)"><img src="./Images/nfsol.jpg"><p class="gameName">Need for speed OL</p></a></li>
+                <li><a class="mpLink" href="" target="_self" name="shadowverse" onclick="clicked(this)"><img src="./Images/shadowverse.jpg"><p class="gameName">Shadowverse</p></a></li>
+                <li><a class="mpLink" href="" target="_self" name="granbluefantas" onclick="clicked(this)"><img src="./Images/granbluefantas.png"><p class="gameName">Granblue fantasy</p></a></li>
+            </ul>
+            <script>
+                function clicked(obj) {
+                    document.cookie = "gameName=" + encodeURIComponent(obj.name) + "; path=/; samesite=lax;";
+                    obj.href = "./gamePage.html?gn=" + obj.name;
+                }
+            </script>
+        </div>
+
+        <div id="newsDiv">
+            <h2>-game news-</h2>
+            <a class="newsAnchor" href="" target="_self"><p>Electronic Arts has now launched the first wave of 25+ EA games coming to Steam! </p><p class="newsDate">05.04.2020</p></a>
+            <a class="newsAnchor" href="" target="_self"><p>Today announced preliminary financial results for its fiscal fourth quarter.</p><p class="newsDate">04.13.2020</p></a>
+            <a class="newsAnchor" href="" target="_self"><p>EA suspends all competitive gaming live events.</p><p class="newsDate">02.27.2020</p></a>
+        </div>
+
+        <div id="copyrightDiv"></div>
+        <script type="text/babel">
+            class Year extends React.Component {
+                constructor(props) {
+                    super(props);
+                }
+                render() {
+                    const y = new Date().getFullYear();
+                    return (
+                        <p id="copyright">Copyright © {y}, Gaming. All rights reserved.</p>
+                    );
+                }
+            }
+            ReactDOM.render(<Year/>, document.getElementById("copyrightDiv"));
+        </script>
+    </body>
+</html>

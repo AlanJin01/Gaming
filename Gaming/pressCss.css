@@ -1,0 +1,223 @@
+a#mainTitle {
+    font-family: purposeAdvance;
+    font-size: 2rem;
+    font-style: italic;
+    position: relative;
+    border-width: 0rem;
+    margin-left: 3rem;
+    top: 2rem;
+    display: inline;
+    text-decoration: none;
+}
+a#mainTitle:link {
+    color: black;
+}
+a#mainTitle:visited {
+    color: black;
+}
+
+div#MainMenuDiv {
+    position: relative;
+    width: 30rem;   
+    text-align: center;
+    margin-right: 3.4rem;
+    float: right;
+    top: 3rem;
+    border-style: solid;
+    border-width: 0rem;
+    border-bottom-width: 0.1rem;
+}
+a.menuAnchor {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-decoration: none;
+    font-family: nebulousContent;
+    font-size: 1rem;
+    font-style: oblique;
+}
+a.menuAnchor:link {
+    color: black;
+}
+a.menuAnchor:visited {
+    color: black;
+}
+a.menuAnchor:hover {
+    color: rgb(121, 121, 121);
+}
+
+div.gamesMenuFrame {
+    width: 8rem;
+    height: 4rem;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: white;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: black;
+    padding: 1rem;
+}
+.menuAnchor:hover .gamesMenuFrame {
+    display: list-item;
+    list-style: none;
+}
+.gamesMenuFrame a {
+    color: black;
+    text-decoration: none;
+    font-family: nebulousContent;
+    font-size: 1rem;
+    font-style: normal;
+}
+.gamesMenuFrame a:link {
+    color: black;
+}
+.gamesMenuFrame a:visited {
+    color: black;
+}
+.gamesMenuFrame a:hover {
+    color: rgb(121, 121, 121);
+}
+
+div#pressDiv {
+    position: relative;
+    width: 50rem;
+    height: 30rem;
+    left: 50%;
+    margin-left: -25rem;
+}
+div#pressDiv h2#pressTitle {
+    font-family: nebulousContent;
+    font-size: 2rem;
+    position: relative;
+    margin-top: 10rem;
+    text-align: center;
+    width: 8rem;
+    left: 50%;
+    margin-left: -4rem;
+    margin-bottom: 5rem;
+}
+div#pressDiv p {
+    font-style: italic;
+    font-size: 1.3rem;
+    position: relative;
+    width: 20rem;
+    margin-left: -10rem;
+    left: 50%;
+    color: rgb(145, 145, 145);
+}
+
+div#copyrightDiv {
+    margin-top: 5rem;
+    text-align: center;
+}
+p#copyright {
+    font-size: 0.3rem;
+}
+
+@font-face {
+    src: url("./Fonts/Purpose-advance.ttf");
+    font-family: purposeAdvance;
+}
+@font-face {
+    src: url("./Fonts/NebulousContent.otf");
+    font-family: nebulousContent;
+}
+
+@media only screen and (max-width: 1470px) {
+    a#mainTitle {
+        font-size: 1.9rem;
+        margin-left: 2.28rem;
+        top: 1.52rem;
+    }
+    div#MainMenuDiv {
+        width: 23rem;   
+        margin-right: 2.58rem;
+        top: 2.28rem;
+        border-bottom-width: 0.08rem;
+    }
+    a.menuAnchor {
+        margin-left: 1.52rem;
+        margin-right: 1.52rem;
+        font-size: 1rem;
+    }
+
+    div.gamesMenuFrame {
+        width: 6.08rem;
+        height: 4.28rem;
+        border-width: 0.08rem;
+        padding: 0.76rem;
+    }
+    .gamesMenuFrame a {
+        font-size: 1rem;
+    }
+
+    div#pressDiv {
+        width: 40rem;
+        height: 30rem;
+        left: 50%;
+        margin-left: -20rem;
+    }
+    div#pressDiv h2#pressTitle {
+        font-size: 1.6rem;
+        margin-top: 8rem;
+        width: 6.4rem;
+        margin-left: -3.2rem;
+        margin-bottom: 4rem;
+    }
+
+    div#copyrightDiv {
+        margin-top: 8rem;
+    }
+    p#copyright {
+        font-size: 0.23rem;
+    }
+}
+@media only screen and (max-width: 751px) {
+    a#mainTitle {
+        font-size: 1rem;
+        margin-left: 1.2rem;
+        top: 0.8rem;
+    }
+    div#MainMenuDiv {
+        width: 18rem;   
+        margin-right: 1.36rem;
+        top: 1.2rem;
+        border-bottom-width: 0.04rem;
+    }
+    a.menuAnchor {
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+        font-size: 0.4rem;
+    }
+
+    div.gamesMenuFrame {
+        width: 3.2rem;
+        height: 3.2rem;
+        border-width: 0.04rem;
+        padding: 0.4rem;
+    }
+    .gamesMenuFrame a {
+        font-size: 0.4rem;
+    }
+
+    div#pressDiv {
+        width: 32rem;
+        height: 24rem;
+        left: 50%;
+        margin-left: -16rem;
+    }
+    div#pressDiv h2#pressTitle {
+        font-size: 1.28rem;
+        margin-top: 6.4rem;
+        width: 5.12rem;
+        margin-left: -2.56rem;
+        margin-bottom: 3.2rem;
+    }
+
+    div#copyrightDiv {
+        margin-top: 15rem;
+    }
+    p#copyright {
+        font-size: 0.12rem;
+    }
+}
